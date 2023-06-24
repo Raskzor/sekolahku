@@ -1,6 +1,6 @@
 package com.galaxy.computer.java.repository;
 
-import com.galaxy.computer.java.domain.MstUser;
+import com.galaxy.computer.java.domain.user.MstUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

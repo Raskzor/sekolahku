@@ -1,15 +1,13 @@
 package com.galaxy.computer.java.service.impl;
 
 import com.galaxy.computer.java.domain.BaseResponse;
-import com.galaxy.computer.java.domain.MstUser;
+import com.galaxy.computer.java.domain.user.MstUser;
 import com.galaxy.computer.java.domain.vo.UserLoginVO;
 import com.galaxy.computer.java.domain.vo.UserRegisterVO;
 import com.galaxy.computer.java.repository.MstUserRepository;
 import com.galaxy.computer.java.service.PasswordService;
 import com.galaxy.computer.java.service.UserService;
-import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
