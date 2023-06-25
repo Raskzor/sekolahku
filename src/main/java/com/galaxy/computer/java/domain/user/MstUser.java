@@ -2,6 +2,7 @@ package com.galaxy.computer.java.domain.user;
 
 
 import com.galaxy.computer.java.domain.vo.UserRegisterVO;
+import lombok.Getter;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -12,6 +13,7 @@ import java.util.Date;
  */
 @Table(name = "MST_USER")
 @Entity
+@Getter
 public class MstUser implements Serializable {
 
     @Id

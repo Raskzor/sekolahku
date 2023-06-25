@@ -11,4 +11,6 @@ public interface PasswordService {
     public String hashPassword(String oriPassword);
 
     boolean validatePassword(UserLoginVO userLoginVO);
+
+    boolean validateUser(UserLoginVO userLoginVO);
 }

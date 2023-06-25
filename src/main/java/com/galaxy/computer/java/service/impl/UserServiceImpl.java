@@ -7,6 +7,7 @@ import com.galaxy.computer.java.domain.vo.UserRegisterVO;
 import com.galaxy.computer.java.repository.MstUserRepository;
 import com.galaxy.computer.java.service.PasswordService;
 import com.galaxy.computer.java.service.UserService;
+import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -75,7 +76,25 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public BaseResponse userLoginValidate(UserLoginVO userLoginVO) {
-        boolean resp = passwordService.validatePassword(userLoginVO);
-        return null;
+        log.info("userInput -> {}", new Gson().toJson(userLoginVO));
+        boolean valid = passwordService.validateUser(userLoginVO);
+        return valid
+                ? validUser(userLoginVO)
+                : inValidUser() ;
+    }
+
+    private BaseResponse inValidUser() {
+        return BaseResponse.builder()
+                .message("Failed")
+                .obj(false)
+                .build();
+    }
+
+    private BaseResponse validUser(UserLoginVO userLoginVO) {
+
+        return BaseResponse.builder()
+                .message("Success")
+                .obj(mstUserRepository.findByUsername(userLoginVO.getUsername()))
+                .build();
     }
 }
