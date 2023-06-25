@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="849d0208-10ad-498c-ad99-53880aff5c7a" name="Changes" comment="fixing process validate user and add response when success validate">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-    </list>
+    <list default="true" id="849d0208-10ad-498c-ad99-53880aff5c7a" name="Changes" comment="fixing git ignore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -150,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687704494599</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixing git ignore">
+      <created>1687704738271</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687704738271</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,9 +171,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initiate project" />
-    <MESSAGE value="fixing git ignore" />
     <MESSAGE value="add controller parameter" />
     <MESSAGE value="fixing process validate user and add response when success validate" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing process validate user and add response when success validate" />
+    <MESSAGE value="fixing git ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing git ignore" />
   </component>
 </project>
